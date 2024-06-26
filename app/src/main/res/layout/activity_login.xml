@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.theme.LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="197dp"
+        android:layout_height="147dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/your_logo" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Ingresa tu correo..."
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="@color/gray"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Ingresa tu contraseña..."
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="@color/gray"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:text="Iniciar sesión"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="¿No tienes una cuenta? Regístrate"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>
+

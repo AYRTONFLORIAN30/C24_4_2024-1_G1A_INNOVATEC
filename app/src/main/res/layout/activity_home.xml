@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Search bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/searchIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/searchIcon"
+                android:layout_toStartOf="@id/cartIcon"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="Buscar..."
+                android:textColorHint="@android:color/white"
+                android:padding="8dp"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/cartIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_cart" />
+        </RelativeLayout>
+
+        <!-- Banner -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/banner_image"
+            android:layout_marginTop="16dp" />
+
+        <!-- Marcas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marcas"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/brand_hp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/brand_toshiba"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/brand_asus" />
+        </LinearLayout>
+
+        <!-- Ofertas especiales -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ofertas especiales"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/special_offer"
+            android:layout_marginTop="8dp" />
+
+        <!-- Categorías -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categorías"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+        <!-- Lista de categorías -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <!-- Cada categoría debe ser un elemento de la lista -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/category_background"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/laptops_image" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laptops"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver más"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="@color/colorAccent" />
+            </LinearLayout>
+
+            <!-- Agrega más categorías aquí -->
+
+        </LinearLayout>
+
+        <!-- Bottom Navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:padding="8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home"
+                android:layout_weight="1"
+                android:layout_gravity="center" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cart"
+                android:layout_weight="1"
+                android:layout_gravity="center" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_user"
+                android:layout_weight="1"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+

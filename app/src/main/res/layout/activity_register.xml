@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.theme.RegisterActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="166dp"
+        android:layout_height="155dp"
+        android:layout_gravity="center"
+        android:src="@drawable/your_logo" />
+
+    <!-- Nombre -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="@color/gray"
+        android:textColor="@android:color/black" />
+
+    <!-- Apellido -->
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="@color/gray"
+        android:textColor="@android:color/black" />
+
+    <!-- Correo Electrónico -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="@color/gray"
+        android:textColor="@android:color/black" />
+
+    <!-- Contraseña -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="@color/gray"
+        android:textColor="@android:color/black" />
+
+    <!-- Dirección -->
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dirección"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="@color/gray"
+        android:textColor="@android:color/black" />
+
+    <!-- Botón Registrarse -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+    <!-- Link para iniciar sesión -->
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="¿Ya tienes una cuenta? Inicia sesión"
+        android:textColor="@color/colorAccent" />
+</LinearLayout>
+
