@@ -1,16 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp">
+    app:cardCornerRadius="8dp"
+    android:layout_margin="4dp"
+    app:cardElevation="4dp">
 
-    <TextView
-        android:id="@+id/nombreTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre del Producto"
-        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="259dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#DDFFFFFF"> <!-- Fondo semi-transparente -->
 
-    <!-- Puedes añadir más vistas aquí según sea necesario -->
-</LinearLayout>
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_alienware" /> <!-- Cambiar por un placeholder adecuado o una imagen relevante -->
+
+        <TextView
+            android:id="@+id/nombreTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="start"
+            android:text="Nombre del Producto"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/precioTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="start"
+            android:text="S/ 6,399.00"
+            android:textColor="@color/colorAccent"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Añadir al carro" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

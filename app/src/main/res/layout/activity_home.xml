@@ -138,12 +138,14 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="16dp" />
                 <Button
+                    android:id="@+id/buttonSeeMoreLaptops"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Ver más"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="16dp"
                     android:backgroundTint="@color/colorAccent" />
+
             </LinearLayout>
 
             <!-- Agrega más categorías aquí -->

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <!-- Permiso necesario para que la aplicación pueda acceder a Internet -->
@@ -14,29 +15,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KOTLIN_INNOVATEC"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ui.theme.LaptopsActivity"
+            android:exported="false" />
         <!-- LoginActivity is the launcher activity -->
         <activity
             android:name=".ui.theme.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ui.theme.RegisterActivity"
             android:exported="true" />
-
         <activity
             android:name=".ui.theme.HomeActivity"
             android:exported="true" />
-
         <activity
             android:name=".ui.theme.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.KOTLIN_INNOVATEC" />
+        <activity
+            android:name=".ui.theme.WelcomeActivity"
+            android:exported="true" />
+        <activity android:name=".LaptopsActivity" />
+        <activity android:name=".ProductDetailsActivity" />
+
+
     </application>
+
 </manifest>

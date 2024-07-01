@@ -60,5 +60,6 @@
         android:layout_marginTop="16dp"
         android:text="¿No tienes una cuenta? Regístrate"
         android:textColor="@color/colorAccent" />
+
 </RelativeLayout>
 
